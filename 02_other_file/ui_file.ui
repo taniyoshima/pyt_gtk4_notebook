@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- Created with Cambalache 0.90.2 -->
+<interface>
+  <!-- interface-name ui_file.ui -->
+  <requires lib="gtk" version="4.12"/>
+  <template class="window" parent="GtkApplicationWindow">
+    <property name="default-height">350</property>
+    <property name="default-width">450</property>
+    <property name="title">pyt_gtk4_notebook02</property>
+    <child>
+      <object class="GtkNotebook">
+        <child>
+          <object class="GtkNotebookPage">
+            <property name="child">
+              <object class="notebook_child"/>
+            </property>
+            <property name="tab-label">Page 1</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkNotebookPage">
+            <property name="child">
+              <object class="notebook_child"/>
+            </property>
+            <property name="tab-label">Page 2</property>
+          </object>
+        </child>
+      </object>
+    </child>
+  </template>
+</interface>

@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<!DOCTYPE cambalache-project SYSTEM "cambalache-project.dtd">
+<cambalache-project version="0.17.3" target_tk="gtk-4.0">
+  <ui>
+	(1,1,"ui_file.ui","ui_file.ui",None,None,None,None,None,None,None)
+  </ui>
+  <object>
+	(1,1,"GtkApplicationWindow","window",None,None,None,None,-1,None,None),
+	(1,2,"GtkNotebook",None,1,None,None,None,-1,None,None),
+	(1,11,"GtkNotebookPage",None,2,None,None,None,None,None,None),
+	(1,12,"GtkBox",None,11,None,None,None,None,None,None),
+	(1,17,"GtkLabel",None,12,None,None,None,-1,None,None),
+	(1,18,"GtkButton",None,12,None,None,None,1,None,None),
+	(1,19,"GtkNotebookPage",None,2,None,None,None,1,None,None),
+	(1,20,"GtkBox",None,19,None,None,None,None,None,None),
+	(1,21,"GtkLabel","label",20,None,None,None,None,None,None),
+	(1,22,"GtkButton",None,20,None,None,None,1,None,None)
+  </object>
+  <object_property>
+	(1,1,"GtkWindow","default-height","400",None,None,None,None,None,None,None,None,None),
+	(1,1,"GtkWindow","default-width","450",None,None,None,None,None,None,None,None,None),
+	(1,11,"GtkNotebookPage","child",None,None,None,None,None,12,None,None,None,None),
+	(1,11,"GtkNotebookPage","tab-label","Page 1",None,None,None,None,None,None,None,None,None),
+	(1,12,"GtkWidget","margin-bottom","20",None,None,None,None,None,None,None,None,None),
+	(1,12,"GtkWidget","margin-end","20",None,None,None,None,None,None,None,None,None),
+	(1,12,"GtkWidget","margin-start","20",None,None,None,None,None,None,None,None,None),
+	(1,12,"GtkWidget","margin-top","20",None,None,None,None,None,None,None,None,None),
+	(1,17,"GtkLabel","label","Page 1のGtk.Button",None,None,None,None,None,None,None,None,None),
+	(1,17,"GtkWidget","hexpand","True",None,None,None,None,None,None,None,None,None),
+	(1,18,"GtkButton","label","押す",None,None,None,None,None,None,None,None,None),
+	(1,19,"GtkNotebookPage","child",None,None,None,None,None,20,None,None,None,None),
+	(1,19,"GtkNotebookPage","tab-label","Page 2",None,None,None,None,None,None,None,None,None),
+	(1,20,"GtkWidget","margin-bottom","20",None,None,None,None,None,None,None,None,None),
+	(1,20,"GtkWidget","margin-end","20",None,None,None,None,None,None,None,None,None),
+	(1,20,"GtkWidget","margin-start","20",None,None,None,None,None,None,None,None,None),
+	(1,20,"GtkWidget","margin-top","20",None,None,None,None,None,None,None,None,None),
+	(1,21,"GtkLabel","label","Page 2のGtk.Button",None,None,None,None,None,None,None,None,None),
+	(1,21,"GtkWidget","hexpand","True",None,None,None,None,None,None,None,None,None),
+	(1,22,"GtkButton","label","押す",None,None,None,None,None,None,None,None,None)
+  </object_property>
+  <object_signal>
+	(1,1,18,"GtkButton","clicked","on_button1_clicked",None,None,None,None,None),
+	(4,1,22,"GtkButton","clicked","on_button2_clicked",None,None,None,None,None)
+  </object_signal>
+</cambalache-project>
